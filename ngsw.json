@@ -1,0 +1,94 @@
+{
+  "configVersion": 1,
+  "timestamp": 1572380279885,
+  "index": "/ngx-cold/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/ngx-cold/1.18054ee7fb08335b8e81.js",
+        "/ngx-cold/6.216a689c0facbeda1803.js",
+        "/ngx-cold/7.c875bd1dd9d883056d2f.js",
+        "/ngx-cold/8.a51189202bdf9d04e388.js",
+        "/ngx-cold/favicon.ico",
+        "/ngx-cold/index.html",
+        "/ngx-cold/main.9e2137c46b3b1a249541.js",
+        "/ngx-cold/polyfills-es5.ffe417a7b835037a6f19.js",
+        "/ngx-cold/polyfills.e073ad4fb5f873b96efc.js",
+        "/ngx-cold/runtime.e9da7ce1c0797454cc77.js",
+        "/ngx-cold/scripts.3b63b54942645f5af7a7.js",
+        "/ngx-cold/styles.2a1d9878e2d95add9aaa.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/ngx-cold/assets/icons/icon-128x128.png",
+        "/ngx-cold/assets/icons/icon-144x144.png",
+        "/ngx-cold/assets/icons/icon-152x152.png",
+        "/ngx-cold/assets/icons/icon-192x192.png",
+        "/ngx-cold/assets/icons/icon-384x384.png",
+        "/ngx-cold/assets/icons/icon-512x512.png",
+        "/ngx-cold/assets/icons/icon-72x72.png",
+        "/ngx-cold/assets/icons/icon-96x96.png",
+        "/ngx-cold/assets/img/icons/cloud_circle.svg",
+        "/ngx-cold/assets/img/icons/github-circle.svg",
+        "/ngx-cold/assets/img/icons/mouse.svg",
+        "/ngx-cold/assets/img/icons/post_add.svg",
+        "/ngx-cold/assets/img/icons/shape-outline.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/ngx-cold/1.18054ee7fb08335b8e81.js": "a0893e7853036a1bb196c08e13842c19b4bfc186",
+    "/ngx-cold/6.216a689c0facbeda1803.js": "130ef4ff09d9b3b5f3501219c967926db08ea05f",
+    "/ngx-cold/7.c875bd1dd9d883056d2f.js": "5bd51b7fde70f4ce7308ec72de026115bb0fc3a6",
+    "/ngx-cold/8.a51189202bdf9d04e388.js": "37c87733037531b94d41ebe6a7decc99caabcff5",
+    "/ngx-cold/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/ngx-cold/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/ngx-cold/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/ngx-cold/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/ngx-cold/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/ngx-cold/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/ngx-cold/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/ngx-cold/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/ngx-cold/assets/img/icons/cloud_circle.svg": "6423b5ed4cee72d88f3f3295dd8a2e8e31ee1970",
+    "/ngx-cold/assets/img/icons/github-circle.svg": "9a2dfab04214dc8b31f2df7baec3419e18ed166e",
+    "/ngx-cold/assets/img/icons/mouse.svg": "6d753bda991531de91c50ff9f7912f5572013d59",
+    "/ngx-cold/assets/img/icons/post_add.svg": "1028c0f9b9575db8d2884bb6d0326e25f569f4ff",
+    "/ngx-cold/assets/img/icons/shape-outline.svg": "9d0f9439eb430f8282fd8cc60e674b07ec8318ac",
+    "/ngx-cold/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/ngx-cold/index.html": "dc3be9d5d7a64060846d8e3da9bd933b33894be8",
+    "/ngx-cold/main.9e2137c46b3b1a249541.js": "dd4f4f26da2cca724e172f06d7f92a8413b5060a",
+    "/ngx-cold/polyfills-es5.ffe417a7b835037a6f19.js": "bde96773a530e4126dd00fbbd08aee2f6a4bea75",
+    "/ngx-cold/polyfills.e073ad4fb5f873b96efc.js": "87992dd27e34116471cb0c471412e8d884e725e3",
+    "/ngx-cold/runtime.e9da7ce1c0797454cc77.js": "adfade7511ad4ea68ab86bcd12369b22c1b5ea47",
+    "/ngx-cold/scripts.3b63b54942645f5af7a7.js": "49dc1895347f91564a0a65e9434164c075d39022",
+    "/ngx-cold/styles.2a1d9878e2d95add9aaa.css": "7acdd6b9dbcbd4e1f0efaa562b5018c5c627f9f6"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
