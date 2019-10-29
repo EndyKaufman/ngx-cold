@@ -18,10 +18,10 @@
     ],
     "paths": {
       "ngx-cold": [
-        "libs/ngx-cold/src"
+        "dist/ngx-cold"
       ],
       "ngx-cold/*": [
-        "libs/ngx-cold/src/*"
+        "dist/ngx-cold/*"
       ]
     }
   }
