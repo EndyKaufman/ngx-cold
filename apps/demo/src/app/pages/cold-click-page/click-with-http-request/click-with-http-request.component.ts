@@ -9,7 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class ClickWithHttpRequestComponent {
   constructor(private httpClient: HttpClient) {}
   onSave(data: any) {
-    return this.httpClient.post('http://5a75bbb808118e0012fd4ce6.mockapi.io/api/users', data);
+    return this.httpClient.post('https://5a75bbb808118e0012fd4ce6.mockapi.io/api/users', data);
   }
   onSaveWithError(data: any) {
     return this.httpClient.post('/api/users', data);

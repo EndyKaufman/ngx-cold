@@ -11,7 +11,7 @@ export class FormWithHttpRequestComponent {
   searchField = new FormControl();
   constructor(private httpClient: HttpClient) {}
   onSearch(search: string) {
-    return this.httpClient.get('http://5a75bbb808118e0012fd4ce6.mockapi.io/api/users', {
+    return this.httpClient.get('https://5a75bbb808118e0012fd4ce6.mockapi.io/api/users', {
       params: {
         search
       }

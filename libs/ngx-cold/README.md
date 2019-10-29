@@ -96,12 +96,11 @@ app.component.html
 ```html
 ...
 <p>Save with *coldForm</p>
-<input
-  *coldForm="let coldForm of searchField; with: { delay: 700, change: onSearch, result: [] }"
-  [formControl]="searchField"
-/>
-<div *ngIf="coldForm.isLoading">Loading...</div>
-<pre [innerText]="coldForm.result|async|json"></pre>
+<div *coldForm="let coldForm of searchField; with: { delay: 700, change: onSearch, result: [] }">
+  <input [formControl]="searchField" />
+  <div *ngIf="coldForm.isLoading">Loading...</div>
+  <pre [innerText]="coldForm.result|async|json"></pre>
+</div>
 ...
 ```
 
