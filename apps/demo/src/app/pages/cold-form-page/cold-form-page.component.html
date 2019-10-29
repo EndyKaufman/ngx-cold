@@ -1,0 +1,30 @@
+<div class="cold-form">
+  <div class="body">
+    <div fxLayout.gt-md="row" fxLayout.lt-md="column">
+      <ngx-docs-example
+        customClass="margin-minus-16"
+        title="Cold form: basic"
+        [html]="sources.formBasic.html"
+        [ts]="sources.formBasic.ts"
+        fxFlex.gt-sm="50"
+        fxFlex.lt-sm="100"
+      >
+        <div class="body">
+          <form-basic></form-basic>
+        </div>
+      </ngx-docs-example>
+      <ngx-docs-example
+        customClass="margin-minus-16"
+        title="Cold form: with http request"
+        [html]="sources.formWithHttpRequest.html"
+        [ts]="sources.formWithHttpRequest.ts"
+        fxFlex.gt-sm="50"
+        fxFlex.lt-sm="100"
+      >
+        <div class="body">
+          <form-with-http-request></form-with-http-request>
+        </div>
+      </ngx-docs-example>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+{
+  "name": "ngx-cold",
+  "version": "1.0.0",
+  "description": "Two small directives for work with observable in Angular8+ without subscribe.",
+  "keywords": [
+    "angular",
+    "ng",
+    "ngx",
+    "cold",
+    "async",
+    "rxjs",
+    "click",
+    "form",
+    "subscribe",
+    "directives",
+    "angular",
+    "angular8",
+    "ng",
+    "ng8"
+  ],
+  "license": "MIT",
+  "author": "EndyKaufman <admin@site15.ru>",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/EndyKaufman/ngx-cold/issues"
+  },
+  "homepage": "https://endykaufman.github.io/ngx-cold/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EndyKaufman/ngx-cold.git"
+  },
+  "maintainers": [
+    {
+      "name": "EndyKaufman",
+      "email": "admin@site15.ru"
+    }
+  ],
+  "peerDependencies": {
+    "rxjs": "~6.4.0",
+    "@angular/common": "^8.2.12",
+    "@angular/compiler": "^8.2.12",
+    "@angular/core": "^8.2.12"
+  }
+}

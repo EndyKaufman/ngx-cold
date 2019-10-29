@@ -1,0 +1,30 @@
+<div class="cold-click">
+  <div class="body">
+    <div fxLayout.gt-md="row" fxLayout.lt-md="column">
+      <ngx-docs-example
+        customClass="margin-minus-16"
+        title="Cold click: basic"
+        [html]="sources.clickBasic.html"
+        [ts]="sources.clickBasic.ts"
+        fxFlex.gt-sm="50"
+        fxFlex.lt-sm="100"
+      >
+        <div class="body">
+          <click-basic></click-basic>
+        </div>
+      </ngx-docs-example>
+      <ngx-docs-example
+        customClass="margin-minus-16"
+        title="Cold click: with http request"
+        [html]="sources.clickWithHttpRequest.html"
+        [ts]="sources.clickWithHttpRequest.ts"
+        fxFlex.gt-sm="50"
+        fxFlex.lt-sm="100"
+      >
+        <div class="body">
+          <click-with-http-request></click-with-http-request>
+        </div>
+      </ngx-docs-example>
+    </div>
+  </div>
+</div>

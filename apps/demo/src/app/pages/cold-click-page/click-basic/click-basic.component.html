@@ -1,0 +1,55 @@
+<p class="mat-h3">
+  Clicked on blue buttons fire up function with Observable return value
+</p>
+<div fxLayout.gt-md="row" fxLayout.lt-md="column">
+  <div *coldClick="let clickWithCall of click$; with: coldClickOptions" fxFlex.gt-sm="50" fxFlex.lt-sm="100">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="clickWithCall.call('custom', 'args', 'in', 'place')"
+      [disabled]="clickWithCall.isLoading"
+    >
+      {{ clickWithCall.isLoading ? 'Click as call in processing...' : 'Click as call' }}
+    </button>
+    <pre [innerText]="clickWithCall | json"></pre>
+  </div>
+  <div *coldClick="let clickWithApply of click$; with: coldClickOptions" fxFlex.gt-sm="50" fxFlex.lt-sm="100">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="clickWithApply.apply('custom', 'args', 'in', 'place')"
+      [disabled]="clickWithApply.isLoading"
+    >
+      {{ clickWithApply.isLoading ? 'Click as apply in processing...' : 'Click as apply' }}
+    </button>
+    <pre [innerText]="clickWithApply | json"></pre>
+  </div>
+</div>
+<br />
+<button mat-raised-button color="secondary" (click)="setClick(onOkClick$)">
+  Change method to alert("ok - custom")
+</button>
+<button mat-raised-button color="secondary" (click)="setClick(onOkClick$('one'))">
+  Change method to alert("ok - one")
+</button>
+<button mat-raised-button color="secondary" (click)="setClick(onOkClick$('two'))">
+  Change method to alert("ok - two")
+</button>
+<button mat-raised-button color="secondary" (click)="updateColdClickOptions({ delay: 3000 })">
+  Set dellay to 3000
+</button>
+<button mat-raised-button color="secondary" (click)="updateColdClickOptions({ delay: 0 })">
+  Set dellay to 0
+</button>
+<!--div *userModals="let modals">
+  <div *coldCrud="let repo of '/api/users'">
+    <form [formGroup]="form">
+      <input formControlName="search" />
+    </form>
+    <button (click)="repo.createBy(modals.createModal(default))"></button>
+    <div *ngFor="let item of repo.listBy(form.valueChanges)">
+      <button (click)="repo.updateBy(modals.updateModal(item))"></button>
+      <button (click)="repo.deleteBy(modals.deleteModal(item))"></button>
+    </div>
+  </div>
+</div-->

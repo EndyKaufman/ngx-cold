@@ -1,0 +1,35 @@
+<p class="mat-h3">
+  Clicked on buttons fire up function with HttpClient post action
+</p>
+<div fxLayout.gt-md="row" fxLayout.lt-md="column">
+  <div
+    *coldClick="let onSaveClick of onSave; with: { error: alert, success: alert }"
+    fxFlex.gt-sm="50"
+    fxFlex.lt-sm="100"
+  >
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="onSaveClick.apply({ username: 'admin', password: '12345678' })"
+      [disabled]="onSaveClick.isLoading"
+    >
+      {{ onSaveClick.isLoading ? 'Save data in processing...' : 'Save data' }}
+    </button>
+    <pre [innerText]="onSaveClick | json"></pre>
+  </div>
+  <div
+    *coldClick="let onSaveWithErrorClick of onSaveWithError; with: { error: alert, success: alert }"
+    fxFlex.gt-sm="50"
+    fxFlex.lt-sm="100"
+  >
+    <button
+      mat-raised-button
+      color="warn"
+      (click)="onSaveWithErrorClick.apply({ username: 'admin', password: '12345678' })"
+      [disabled]="onSaveWithErrorClick.isLoading"
+    >
+      {{ onSaveWithErrorClick.isLoading ? 'Save data with error in processing...' : 'Save data with error' }}
+    </button>
+    <pre [innerText]="onSaveWithErrorClick | json"></pre>
+  </div>
+</div>

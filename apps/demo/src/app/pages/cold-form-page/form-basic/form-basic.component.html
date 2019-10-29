@@ -1,0 +1,42 @@
+<p class="mat-h3">
+  Typing on fields fire up alert with form values
+</p>
+<form [formGroup]="form" *coldForm="let coldForm of form; with: coldFormOptions" novalidate>
+  <mat-form-field class="full-width" *ngIf="form.get('username')">
+    <input matInput formControlName="username" placeholder="Username" />
+  </mat-form-field>
+  <mat-form-field class="full-width" *ngIf="form.get('password')">
+    <input matInput formControlName="password" placeholder="Password" />
+  </mat-form-field>
+  <pre [innerText]="coldForm | json"></pre>
+</form>
+<br />
+<button
+  mat-raised-button
+  color="secondary"
+  (click)="
+    updateForm({
+      username: ''
+    })
+  "
+>
+  Change form (only username)
+</button>
+<button
+  mat-raised-button
+  color="secondary"
+  (click)="
+    updateForm({
+      username: '',
+      password: ''
+    })
+  "
+>
+  Change form (username and password)
+</button>
+<button mat-raised-button color="secondary" (click)="updateColdFormOptions({ delay: 700 })">
+  Set dellay to 700
+</button>
+<button mat-raised-button color="secondary" (click)="updateColdFormOptions({ delay: 0 })">
+  Set dellay to 0
+</button>

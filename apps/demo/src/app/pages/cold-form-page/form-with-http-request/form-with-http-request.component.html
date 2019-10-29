@@ -1,0 +1,26 @@
+<p class="mat-h3">
+  Typing on field send form values with HttpClient to remote server
+</p>
+<ng-container *coldForm="let coldForm of searchField; with: { delay: 700, change: onSearch, error: alert, result: [] }">
+  <mat-form-field class="full-width">
+    <input matInput [formControl]="searchField" placeholder="Filter (type 'user' or 'user1')" />
+  </mat-form-field>
+  <mat-progress-bar
+    mode="determinate"
+    color="accent"
+    [value]="coldForm.isLoading ? 0 : 100"
+    [bufferValue]="100"
+  ></mat-progress-bar>
+  <ng-container *ngIf="!coldForm.isLoading && coldForm.result && coldForm.result | async as items">
+    <ng-container *ngIf="items && items.length > 0; else notFounded">
+      <mat-selection-list>
+        <mat-list-option *ngFor="let item of items">
+          {{ item.email }}
+        </mat-list-option>
+      </mat-selection-list>
+    </ng-container>
+  </ng-container>
+  <ng-template #notFounded>
+    <pre>Data not founded</pre>
+  </ng-template>
+</ng-container>
