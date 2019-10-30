@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1572382573408,
+  "timestamp": 1572438197752,
   "index": "/ngx-cold/index.html",
   "assetGroups": [
     {
@@ -14,7 +14,7 @@
         "/ngx-cold/8.a51189202bdf9d04e388.js",
         "/ngx-cold/favicon.ico",
         "/ngx-cold/index.html",
-        "/ngx-cold/main.0bac9e6148d0d35861b9.js",
+        "/ngx-cold/main.4c2cddd37809f8bb9263.js",
         "/ngx-cold/polyfills-es5.ffe417a7b835037a6f19.js",
         "/ngx-cold/polyfills.e073ad4fb5f873b96efc.js",
         "/ngx-cold/runtime.6198122666073dddadc6.js",
@@ -65,8 +65,8 @@
     "/ngx-cold/assets/img/icons/post_add.svg": "1028c0f9b9575db8d2884bb6d0326e25f569f4ff",
     "/ngx-cold/assets/img/icons/shape-outline.svg": "9d0f9439eb430f8282fd8cc60e674b07ec8318ac",
     "/ngx-cold/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/ngx-cold/index.html": "f629010a69f20b2951422c3c4cd4362e37e206b5",
-    "/ngx-cold/main.0bac9e6148d0d35861b9.js": "ce548e6d41ffb594d00c7588653575965109e692",
+    "/ngx-cold/index.html": "dd0183367dcd6e237fe7368e1bd985c3271b59ff",
+    "/ngx-cold/main.4c2cddd37809f8bb9263.js": "dc99adc0a051f8a4735c5f16210300a7d0b9be13",
     "/ngx-cold/polyfills-es5.ffe417a7b835037a6f19.js": "bde96773a530e4126dd00fbbd08aee2f6a4bea75",
     "/ngx-cold/polyfills.e073ad4fb5f873b96efc.js": "87992dd27e34116471cb0c471412e8d884e725e3",
     "/ngx-cold/runtime.6198122666073dddadc6.js": "6dc4cb9646b75e5f2e960e636cb7389a5f348fdc",
