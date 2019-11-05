@@ -41,15 +41,3 @@
 <button mat-raised-button color="secondary" (click)="updateColdClickOptions({ delay: 0 })">
   Set dellay to 0
 </button>
-<!--div *userModals="let modals">
-  <div *coldCrud="let repo of '/api/users'">
-    <form [formGroup]="form">
-      <input formControlName="search" />
-    </form>
-    <button (click)="repo.createBy(modals.createModal(default))"></button>
-    <div *ngFor="let item of repo.listBy(form.valueChanges)">
-      <button (click)="repo.updateBy(modals.updateModal(item))"></button>
-      <button (click)="repo.deleteBy(modals.deleteModal(item))"></button>
-    </div>
-  </div>
-</div-->
