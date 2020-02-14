@@ -81,7 +81,7 @@
     "@types/prismjs": "^1.16.0",
     "core-js": "^2.5.4",
     "lodash-es": "^4.17.15",
-    "ngx-markdown": "^8.2.1",
+    "ngx-markdown": "^9.0.0",
     "prismjs": "^1.17.1",
     "raw-loader": "^0.5.1",
     "rxjs": "~6.4.0",
