@@ -1,7 +1,7 @@
 {
   "name": "ngx-cold",
   "version": "1.1.0",
-  "description": "Two small directives for work with observable in Angular8+ without subscribe.",
+  "description": "Two small directives for work with observable in Angular9+ without subscribe.",
   "keywords": [
     "angular",
     "ng",
@@ -56,7 +56,7 @@
     "tslint": "tslint",
     "e2e": "ng e2e",
     "github:prebuild": "ng build demo --base-href /ngx-cold/ --prod",
-    "github:build": "run-s format:fix lib:build config:prod github:prebuild github:postbuild",
+    "github:build": "run-s format:fix lib:build config:prod github:prebuild lib:build github:postbuild",
     "github:postbuild": "./node_modules/.bin/cp-cli ./dist/demo/index.html ./dist/demo/404.html",
     "github:deploy": "gh-pages -d dist/demo",
     "format:fix": "prettier  --config ./.prettierrc --write \"{apps,libs}/**/*.ts\"",
