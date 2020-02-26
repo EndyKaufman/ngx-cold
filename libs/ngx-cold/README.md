@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/EndyKaufman/ngx-cold.svg?branch=master)](https://travis-ci.org/EndyKaufman/ngx-cold)
 [![npm version](https://badge.fury.io/js/ngx-cold.svg)](https://badge.fury.io/js/ngx-cold)
 
-Two small directives for work with observable in Angular8+ without subscribe:
+Two small directives for work with observable in Angular9+ without subscribe:
 
 - \*coldClick - easy way for run http post from template.
 - \*coldForm - easy way for submit typed form data to remote server from template.

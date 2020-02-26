@@ -3,7 +3,7 @@
 </p>
 <div fxLayout.gt-md="row" fxLayout.lt-md="column">
   <div
-    *coldClick="let onSaveClick of onSave; with: { error: alert, success: alert }"
+    *coldClick="let onSaveClick of onSave; with: { error: alert, success: alert, context: this }"
     fxFlex.gt-sm="50"
     fxFlex.lt-sm="100"
   >
@@ -18,7 +18,7 @@
     <pre [innerText]="onSaveClick | json"></pre>
   </div>
   <div
-    *coldClick="let onSaveWithErrorClick of onSaveWithError; with: { error: alert, success: alert }"
+    *coldClick="let onSaveWithErrorClick of onSaveWithError; with: { error: alert, success: alert, context: this}"
     fxFlex.gt-sm="50"
     fxFlex.lt-sm="100"
   >
