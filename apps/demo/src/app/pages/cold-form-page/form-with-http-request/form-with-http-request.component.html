@@ -1,7 +1,9 @@
 <p class="mat-h3">
-  Typing on field send form values with HttpClient to remote server
+  Typing on field send form values with HttpClient to remote server (github users api)
 </p>
-<ng-container *coldForm="let coldForm of searchField; with: { delay: 700, change: onSearch, error: alert, result: [], context:this }">
+<ng-container
+  *coldForm="let coldForm of searchField; with: { delay: 700, change: onSearch, error: alert, result: [], context:this }"
+>
   <mat-form-field class="full-width">
     <input matInput [formControl]="searchField" placeholder="Filter (type 'user' or 'user1')" />
   </mat-form-field>
@@ -15,7 +17,7 @@
     <ng-container *ngIf="(items || []).length > 0; else notFounded">
       <mat-selection-list>
         <mat-list-option *ngFor="let item of items">
-          {{ item?.email }}
+          {{ item?.login }}
         </mat-list-option>
       </mat-selection-list>
     </ng-container>
