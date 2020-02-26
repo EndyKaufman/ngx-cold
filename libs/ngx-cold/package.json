@@ -1,6 +1,6 @@
 {
   "name": "ngx-cold",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Two small directives for work with observable in Angular9+ without subscribe.",
   "keywords": [
     "angular",
