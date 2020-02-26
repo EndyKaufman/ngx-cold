@@ -5,7 +5,7 @@
         [html]="source.html"
         [ts]="source.ts">
         <div class="body">
-            <markdown [data]="readme"></markdown>
+            <div [innerHTML]="readme | markdown"></div>
         </div>
     </ngx-docs-example>
 </div>

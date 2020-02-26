@@ -8,12 +8,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class ColdClickPageComponent {
   sources = {
     clickBasic: {
-      html: require('!!raw-loader?lang=html!./click-basic/click-basic.component.html'),
-      ts: require('!!raw-loader?lang=typescript!./click-basic/click-basic.component.ts')
+      html: require('!!raw-loader!./click-basic/click-basic.component.html').default,
+      ts: require('!!raw-loader!./click-basic/click-basic.component.ts').default
     },
     clickWithHttpRequest: {
-      html: require('!!raw-loader?lang=html!./click-with-http-request/click-with-http-request.component.html'),
-      ts: require('!!raw-loader?lang=typescript!./click-with-http-request/click-with-http-request.component.ts')
+      html: require('!!raw-loader!./click-with-http-request/click-with-http-request.component.html').default,
+      ts: require('!!raw-loader!./click-with-http-request/click-with-http-request.component.ts').default
     }
   };
 }

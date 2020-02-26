@@ -9,14 +9,15 @@ import { Router, Routes } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   @Input()
-  title: string = undefined;
+  title: string;
+
   @Input()
   set childrenRoutes(routes: any[]) {
-    this.allChildrenRoutes = routes.filter((item: any) => item.data);
+    this._childrenRoutes = routes.filter((item: any) => item.data);
   }
   get childrenRoutes() {
-    return this.allChildrenRoutes
-      ? this.allChildrenRoutes
+    return this._childrenRoutes
+      ? this._childrenRoutes
           .filter((item: any) => item.data && item.data.visible !== false && item.data.align !== 'left')
           .map((item: any) => {
             const newItem = item.data;
@@ -27,8 +28,8 @@ export class NavbarComponent implements OnInit {
       : [];
   }
   get leftChildrenRoutes() {
-    return this.allChildrenRoutes
-      ? this.allChildrenRoutes
+    return this._childrenRoutes
+      ? this._childrenRoutes
           .filter((item: any) => item.data && item.data.visible !== false && item.data.align === 'left')
           .map((item: any) => {
             const newItem = item.data;
@@ -39,7 +40,7 @@ export class NavbarComponent implements OnInit {
       : [];
   }
 
-  private allChildrenRoutes: Routes;
+  private _childrenRoutes: Routes;
 
   constructor(public router: Router) {}
 

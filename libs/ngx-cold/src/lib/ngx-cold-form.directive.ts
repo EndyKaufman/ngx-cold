@@ -10,21 +10,22 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
-import { Subscription } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { debounceTime, distinctUntilChanged, tap } from 'rxjs/operators';
 
 export interface NgxColdFormDirectiveContextFormOptions {
   delay?: number;
   context?: any;
-  change?: <T = any>(result: T) => void;
+  change?: (result: any) => any;
   success?: <T = any>(result: T) => void;
   error?: <T = any>(err: T) => void;
+  result?: any;
 }
 export interface NgxColdFormDirectiveContext {
   $implicit: {
     isLoading: boolean;
-    result: any;
-  };
+    result: ((search: string) => null | Observable<any>) | any[] | null;
+  } | null;
 }
 const emptyFunction = () => {};
 
@@ -33,11 +34,11 @@ const emptyFunction = () => {};
 })
 export class NgxColdFormDirective implements OnChanges, OnDestroy {
   @Input() coldFormOf: AbstractControl;
-  @Input() coldFormWith: NgxColdFormDirectiveContextFormOptions = null;
+  @Input() coldFormWith: NgxColdFormDirectiveContextFormOptions | null = null;
 
   private context: NgxColdFormDirectiveContext = { $implicit: null };
-  private viewRef: EmbeddedViewRef<NgxColdFormDirectiveContext>;
-  private valueChangesSubscription: Subscription;
+  private viewRef: EmbeddedViewRef<NgxColdFormDirectiveContext> | null;
+  private valueChangesSubscription: Subscription | null;
 
   constructor(
     private templateRef: TemplateRef<NgxColdFormDirectiveContext>,
@@ -92,7 +93,8 @@ export class NgxColdFormDirective implements OnChanges, OnDestroy {
       return;
     }
     if (!coldFormWith.context) {
-      coldFormWith.context = (this.viewContainerRef as any)._view.context;
+      console.log(this.viewContainerRef);
+      coldFormWith.context = null; // todo: not work in angular 9 - (this.viewContainerRef as any)._view.context;
     }
     if (this.valueChangesSubscription) {
       this.valueChangesSubscription.unsubscribe();
@@ -101,16 +103,20 @@ export class NgxColdFormDirective implements OnChanges, OnDestroy {
     this.valueChangesSubscription = coldFormOf.valueChanges
       .pipe(
         tap(values => {
-          this.context.$implicit.result = null;
-          this.context.$implicit.isLoading = true;
+          if (this.context.$implicit) {
+            this.context.$implicit.result = coldFormWith.result || null;
+            this.context.$implicit.isLoading = true;
+          }
           this.changeDetectorRef.markForCheck();
         }),
         debounceTime(coldFormWith.delay || 0),
         distinctUntilChanged(),
         tap(values => {
           const result = (coldFormWith.change || emptyFunction).call(coldFormWith.context, values);
-          this.context.$implicit.result = result || null;
-          this.context.$implicit.isLoading = false;
+          if (this.context.$implicit) {
+            this.context.$implicit.result = result || null;
+            this.context.$implicit.isLoading = false;
+          }
           this.changeDetectorRef.markForCheck();
         })
       )

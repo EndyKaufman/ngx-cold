@@ -24,7 +24,7 @@ export interface NgxColdClickDirectiveContext {
     isLoading: boolean;
     call: <T = any, K = any>(...args: T[]) => Observable<K>;
     apply: <T = any, K = any>(...args: T[]) => Observable<K>;
-  };
+  } | null;
 }
 const emptyFunction = () => {};
 
@@ -33,10 +33,10 @@ const emptyFunction = () => {};
 })
 export class NgxColdClickDirective implements OnChanges, OnDestroy {
   @Input() coldClickOf: NgxColdClickAction = of(null);
-  @Input() coldClickWith: NgxColdClickDirectiveContextClickOptions = null;
+  @Input() coldClickWith: NgxColdClickDirectiveContextClickOptions | null = null;
 
   private context: NgxColdClickDirectiveContext = { $implicit: null };
-  private viewRef: EmbeddedViewRef<NgxColdClickDirectiveContext>;
+  private viewRef: EmbeddedViewRef<NgxColdClickDirectiveContext> | null;
   private destroyed$ = new Subject<boolean>();
 
   constructor(
@@ -89,10 +89,12 @@ export class NgxColdClickDirective implements OnChanges, OnDestroy {
     const coldClickWith = this.coldClickWith || {};
     const coldClickOf = this.coldClickOf || of(null);
     if (!coldClickWith.context) {
-      coldClickWith.context = (this.viewContainerRef as any)._view.context;
+      coldClickWith.context = null; // todo: not work in angular 9 - (this.viewContainerRef as any)._view.context;
     }
     defer(() => {
-      this.context.$implicit.isLoading = true;
+      if (this.context.$implicit) {
+        this.context.$implicit.isLoading = true;
+      }
       this.changeDetectorRef.markForCheck();
       return timer(coldClickWith.delay || 0).pipe(
         flatMap(
@@ -106,14 +108,18 @@ export class NgxColdClickDirective implements OnChanges, OnDestroy {
       .pipe(
         first(),
         catchError(err => {
-          this.context.$implicit.isLoading = false;
+          if (this.context.$implicit) {
+            this.context.$implicit.isLoading = false;
+          }
           this.changeDetectorRef.markForCheck();
           out$.error(err);
           return throwError(err);
         }),
         tap(out => out$.next(out)),
         finalize(() => {
-          this.context.$implicit.isLoading = false;
+          if (this.context.$implicit) {
+            this.context.$implicit.isLoading = false;
+          }
           this.changeDetectorRef.markForCheck();
         }),
         takeUntil(this.destroyed$)

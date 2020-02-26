@@ -10,7 +10,8 @@ import { NgxColdFormDirectiveContextFormOptions } from 'ngx-cold';
 export class FormBasicComponent {
   form: FormGroup;
   coldFormOptions: NgxColdFormDirectiveContextFormOptions = {
-    change: this.alert
+    change: this.alert,
+    context: this
   };
   constructor(private formBuilder: FormBuilder) {
     this.updateForm({
