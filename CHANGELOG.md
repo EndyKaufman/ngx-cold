@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/EndyKaufman/ngx-cold/compare/1.1.0...1.2.0) (2020-03-12)
+
+
+### Bug Fixes
+
+* add support get context from host component (thanks to [@thekiba](https://github.com/thekiba)) ([4a68521](https://github.com/EndyKaufman/ngx-cold/commit/4a68521dce7bdb92ed89755fd83af3f7f750a27f))
+
+
+### Features
+
+* update deps ([57c5a0f](https://github.com/EndyKaufman/ngx-cold/commit/57c5a0fc7d5dbd7d696263e8c510e29aab266b5d))
+
+
+
 # [1.1.0](https://github.com/EndyKaufman/ngx-cold/compare/1.0.1...1.1.0) (2020-02-26)
 
 
