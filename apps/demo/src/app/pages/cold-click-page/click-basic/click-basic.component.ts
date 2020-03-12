@@ -32,8 +32,7 @@ export class ClickBasicComponent {
   updateColdClickOptions(options: NgxColdClickDirectiveContextClickOptions) {
     this.coldClickOptions = {
       ...this.coldClickOptions,
-      ...options,
-      context: this
+      ...options
     };
   }
   setClick(observableClick: NgxColdClickAction<string>) {

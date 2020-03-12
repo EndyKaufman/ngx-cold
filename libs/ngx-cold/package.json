@@ -1,6 +1,6 @@
 {
   "name": "ngx-cold",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Two small directives for work with observable in Angular9+ without subscribe.",
   "keywords": [
     "angular",
@@ -38,8 +38,8 @@
   ],
   "peerDependencies": {
     "rxjs": "~6.5.4",
-    "@angular/common": "^9.0.2",
-    "@angular/compiler": "^9.0.2",
-    "@angular/core": "^9.0.2"
+    "@angular/common": "^9.0.6",
+    "@angular/compiler": "^9.0.6",
+    "@angular/core": "^9.0.6"
   }
 }

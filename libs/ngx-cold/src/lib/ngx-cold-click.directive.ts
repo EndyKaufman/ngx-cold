@@ -89,7 +89,7 @@ export class NgxColdClickDirective implements OnChanges, OnDestroy {
     const coldClickWith = this.coldClickWith || {};
     const coldClickOf = this.coldClickOf || of(null);
     if (!coldClickWith.context) {
-      coldClickWith.context = null; // todo: not work in angular 9 - (this.viewContainerRef as any)._view.context;
+      coldClickWith.context = (this.changeDetectorRef as EmbeddedViewRef<any>).context;
     }
     defer(() => {
       if (this.context.$implicit) {
