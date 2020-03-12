@@ -94,7 +94,7 @@ export class NgxColdFormDirective implements OnChanges, OnDestroy {
     }
     if (!coldFormWith.context) {
       console.log(this.viewContainerRef);
-      coldFormWith.context = null; // todo: not work in angular 9 - (this.viewContainerRef as any)._view.context;
+      coldFormWith.context = (this.changeDetectorRef as EmbeddedViewRef<any>).context;
     }
     if (this.valueChangesSubscription) {
       this.valueChangesSubscription.unsubscribe();
