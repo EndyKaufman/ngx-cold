@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1582712637260,
+  "timestamp": 1584046396864,
   "index": "/ngx-cold/index.html",
   "assetGroups": [
     {
@@ -8,18 +8,18 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/ngx-cold/6.aaec088ae3510bc525ff.js",
-        "/ngx-cold/7.9318020d9be6671417a2.js",
-        "/ngx-cold/8.8a65059367ff22c2faab.js",
-        "/ngx-cold/common.97549ccb93d3be9e9c7d.js",
+        "/ngx-cold/6.a4a1d12e869940e10ae6.js",
+        "/ngx-cold/7.7daf9f8216ea78a8745c.js",
+        "/ngx-cold/8.15a9e1936a2b43a98336.js",
+        "/ngx-cold/common.31f786132f495ec39def.js",
         "/ngx-cold/favicon.ico",
         "/ngx-cold/index.html",
-        "/ngx-cold/main.1b93212fb4859bb53dff.js",
-        "/ngx-cold/polyfills-es5.350b9bbf306c662a4b36.js",
-        "/ngx-cold/polyfills.d3cd0254b57453079e05.js",
-        "/ngx-cold/runtime.f7803500891622aef66c.js",
+        "/ngx-cold/main.fcc26d2e4c47c9f0ad64.js",
+        "/ngx-cold/polyfills-es5.f7283b0032f0ae99e0f7.js",
+        "/ngx-cold/polyfills.c8c246d09b22e56eabf9.js",
+        "/ngx-cold/runtime.3e9009fc13ddf2c37050.js",
         "/ngx-cold/scripts.b9f2758c7208eadf6ac6.js",
-        "/ngx-cold/styles.8eeead42b49eb8d8fdae.css"
+        "/ngx-cold/styles.94c0582072ad0b954655.css"
       ],
       "patterns": []
     },
@@ -47,9 +47,9 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/ngx-cold/6.aaec088ae3510bc525ff.js": "48b583790647e23e9774645890b2aef02e123194",
-    "/ngx-cold/7.9318020d9be6671417a2.js": "033e2e3867b8c7a04732bf9541a65d61b7fc249d",
-    "/ngx-cold/8.8a65059367ff22c2faab.js": "71d79f533c33e8e58e55307a9a0c6abfe7327dcd",
+    "/ngx-cold/6.a4a1d12e869940e10ae6.js": "48b583790647e23e9774645890b2aef02e123194",
+    "/ngx-cold/7.7daf9f8216ea78a8745c.js": "033e2e3867b8c7a04732bf9541a65d61b7fc249d",
+    "/ngx-cold/8.15a9e1936a2b43a98336.js": "71d79f533c33e8e58e55307a9a0c6abfe7327dcd",
     "/ngx-cold/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/ngx-cold/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/ngx-cold/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -63,15 +63,15 @@
     "/ngx-cold/assets/img/icons/mouse.svg": "6d753bda991531de91c50ff9f7912f5572013d59",
     "/ngx-cold/assets/img/icons/post_add.svg": "1028c0f9b9575db8d2884bb6d0326e25f569f4ff",
     "/ngx-cold/assets/img/icons/shape-outline.svg": "9d0f9439eb430f8282fd8cc60e674b07ec8318ac",
-    "/ngx-cold/common.97549ccb93d3be9e9c7d.js": "8752fc5ac34cf854346cecdb736989a0cb0c085c",
+    "/ngx-cold/common.31f786132f495ec39def.js": "8752fc5ac34cf854346cecdb736989a0cb0c085c",
     "/ngx-cold/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/ngx-cold/index.html": "0927982d8989f34a04993afed5bfb8f555c60644",
-    "/ngx-cold/main.1b93212fb4859bb53dff.js": "27e6d2c92615d4bf544aee5116b2dfe14b0617e2",
-    "/ngx-cold/polyfills-es5.350b9bbf306c662a4b36.js": "f6e68e71237c3d5c789e78b679dfecaea09e700a",
-    "/ngx-cold/polyfills.d3cd0254b57453079e05.js": "8a318d82db32d8f5657a6e2f3210af6e1528f7f6",
-    "/ngx-cold/runtime.f7803500891622aef66c.js": "b3ea61c18a6fff8d9d0e057eda7cfc242ecff377",
+    "/ngx-cold/index.html": "5166800cbd3cb5f8a0ea58ada6a1a8f0cf3fd668",
+    "/ngx-cold/main.fcc26d2e4c47c9f0ad64.js": "6382cbd75a8ae9b586d2346a75b213b457c7df94",
+    "/ngx-cold/polyfills-es5.f7283b0032f0ae99e0f7.js": "69aa568aad312ef242704303e34abd2ad451ee04",
+    "/ngx-cold/polyfills.c8c246d09b22e56eabf9.js": "7a528ff12ede241cbb9f9ef2139f43d73256cca4",
+    "/ngx-cold/runtime.3e9009fc13ddf2c37050.js": "1a627eb96941e5f2d3710a634ae5f6610f91d968",
     "/ngx-cold/scripts.b9f2758c7208eadf6ac6.js": "8e0a8e1f3726139c40c74f871b5bf828ecb55bf1",
-    "/ngx-cold/styles.8eeead42b49eb8d8fdae.css": "55f19a6abb0be38449730286191ca5ed5d53272a"
+    "/ngx-cold/styles.94c0582072ad0b954655.css": "ff791d3bb8942d4e3fa381167407411c4e8e7eb7"
   },
   "navigationUrls": [
     {
