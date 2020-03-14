@@ -93,7 +93,6 @@ export class NgxColdFormDirective implements OnChanges, OnDestroy {
       return;
     }
     if (!coldFormWith.context) {
-      console.log(this.viewContainerRef);
       coldFormWith.context = (this.changeDetectorRef as EmbeddedViewRef<any>).context;
     }
     if (this.valueChangesSubscription) {
