@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/EndyKaufman/ngx-cold/compare/1.2.0...1.2.1) (2020-03-14)
+
+
+### Bug Fixes
+
+* remove console.log from directive ([63031f6](https://github.com/EndyKaufman/ngx-cold/commit/63031f6b29bb6a58b9d7e19cfcecbb44731ac9e8))
+
+
+
 # [1.2.0](https://github.com/EndyKaufman/ngx-cold/compare/1.1.0...1.2.0) (2020-03-12)
 
 
