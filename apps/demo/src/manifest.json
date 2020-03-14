@@ -5,7 +5,7 @@
   "background_color": "#3f51b5",
   "display": "standalone",
   "scope": "/",
-  "start_url": "https://endykaufman.github.io/ngx-repository/index.html",
+  "start_url": "https://endykaufman.github.io/ngx-cold/index.html",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",

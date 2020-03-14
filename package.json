@@ -1,6 +1,6 @@
 {
   "name": "ngx-cold",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Two small directives for work with observable in Angular9+ without subscribe.",
   "keywords": [
     "angular",
@@ -97,7 +97,7 @@
     "@rucken/cli": "^4.1.6",
     "@types/jasmine": "~3.5.9",
     "@types/jasminewd2": "~2.0.8",
-    "@types/node": "~13.9.0",
+    "@types/node": "~13.9.1",
     "codelyzer": "~5.2.1",
     "conventional-changelog-cli": "^2.0.31",
     "conventional-commits-detector": "^1.0.2",
