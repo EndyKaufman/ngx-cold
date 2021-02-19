@@ -83,7 +83,7 @@
     "core-js": "^3.6.4",
     "lodash-es": "^4.17.15",
     "ngx-markdown": "^9.0.0",
-    "prismjs": "^1.19.0",
+    "prismjs": "^1.23.0",
     "raw-loader": "^4.0.0",
     "rxjs": "~6.5.4",
     "zone.js": "^0.10.2"
